@@ -7,6 +7,8 @@ import Login from './pages/login';
 import LecturerHome from './pages/lecturer/home';
 import LecturerClasslist from './pages/lecturer/classlist';
 import LecturerClassDetail from './pages/lecturer/classdetail';
+import StudentClassDetail from './pages/student/classdetail';
+import LecturerInfo from './pages/lecturer/info';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,7 +21,9 @@ root.render(
         <Route path="/lecturer/" element={<LecturerHome />} />
         <Route path="/lecturer/classlist" element={<LecturerClasslist />} />
         <Route path="/lecturer/classdetail" element={<LecturerClassDetail />} />
-
+        <Route path="/lecturer/info" element={<LecturerInfo />} />
+        {/* Student */}
+        <Route path="/student/classdetail" element={<StudentClassDetail />} />
       </Routes>
     </Router>
   </div>
