@@ -1,12 +1,12 @@
 import React from "react";
-import AddClassModal from "../components/modals/add-class-modal";
-import EditClassModal from "../components/modals/edit-class-modal";
-import LogoutModal from "../components/modals/logout-modal";
-import Footer from "../components/sections/footer";
-import SearchBar from "../components/sections/searchbar";
-import SidebarLecturer from "../components/sections/sidebar-lecturer";
+import AddClassModal from "../../components/modals/add-class-modal";
+import EditClassModal from "../../components/modals/edit-class-modal";
+import LogoutModal from "../../components/modals/logout-modal";
+import Footer from "../../components/sections/footer";
+import SearchBar from "../../components/sections/searchbar";
+import SidebarLecturer from "../../components/sections/sidebar-lecturer";
 
-class ClasslistLecturer extends React.Component {
+class LecturerClasslist extends React.Component {
     constructor(props){
         super(props);
         this.deleteClass = this.deleteClass.bind(this);
@@ -141,4 +141,4 @@ class ClasslistLecturer extends React.Component {
     }
 }
 
-export default ClasslistLecturer;
+export default LecturerClasslist;

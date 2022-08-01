@@ -1,10 +1,10 @@
 import React from "react";
-import LogoutModal from "../components/modals/logout-modal";
-import Footer from "../components/sections/footer";
-import SearchBar from "../components/sections/searchbar";
-import SidebarLecturer from "../components/sections/sidebar-lecturer";
+import LogoutModal from "../../components/modals/logout-modal";
+import Footer from "../../components/sections/footer";
+import SearchBar from "../../components/sections/searchbar";
+import SidebarLecturer from "../../components/sections/sidebar-lecturer";
 
-class HomeLecturer extends React.Component {
+class LecturerHome extends React.Component {
     render() {
         return(
             <div id="page-top">
@@ -27,4 +27,4 @@ class HomeLecturer extends React.Component {
     }
 }
 
-export default HomeLecturer;
+export default LecturerHome;
