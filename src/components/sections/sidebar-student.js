@@ -9,7 +9,7 @@ class SidebarStudent extends React.Component {
             >
                 <a
                     className="sidebar-brand d-flex align-items-center justify-content-center"
-                    href="./index-lecturer.html"
+                    href="/student/"
                 >
                     <div className="sidebar-brand-icon">
                         <i className="fas fa-user"></i>
@@ -36,8 +36,8 @@ class SidebarStudent extends React.Component {
                         data-parent="#accordionSidebar"
                     >
                         <div className="bg-white py-2 collapse-inner rounded">
-                            <a className="collapse-item" href="./lecturer-info.html">Thông tin cá nhân</a>
-                            <a href="# " className="collapse-item">Đăng xuất</a>
+                            <a className="collapse-item" href="/student/info">Thông tin cá nhân</a>
+                            <a href="# " className="collapse-item" data-toggle="modal" data-target="#logoutModal">Đăng xuất</a>
                         </div>
                     </div>
                 </li>
@@ -60,7 +60,7 @@ class SidebarStudent extends React.Component {
                         data-parent="#accordionSidebar"
                     >
                         <div className="bg-white py-2 collapse-inner rounded">
-                            <a className="collapse-item" href="./classNamelist-lecturer.html">Danh sách lớp học</a>
+                            <a className="collapse-item" href="/student/classlist">Danh sách lớp học</a>
                         </div>
                     </div>
                 </li>
