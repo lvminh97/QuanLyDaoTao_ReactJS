@@ -5,6 +5,7 @@ import LogoutModal from "../../components/modals/logout-modal";
 import Footer from "../../components/sections/footer";
 import SearchBar from "../../components/sections/searchbar";
 import SidebarLecturer from "../../components/sections/sidebar-lecturer";
+import LecturerClasslistItem from "../../components/widgets/classlist-item-lecturer";
 
 class LecturerClasslist extends React.Component {
     constructor(props){
@@ -49,78 +50,10 @@ class LecturerClasslist extends React.Component {
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr id="class01">
-                                                    <td><a href="class-detail.html">103175</a></td>
-                                                    <td>Kỹ thuật lập trình</td>
-                                                    <td>20222</td>
-                                                    <td>D3-201</td>
-                                                    <td>
-                                                        <button
-                                                            className="btn btn-warning"
-                                                            data-toggle="modal"
-                                                            data-target="#editClassModal"
-                                                        >
-                                                            <i className="fa fa-fw fa-edit"></i>
-                                                        </button>
-                                                        <button className="btn btn-danger" onClick={this.deleteClass}>
-                                                            <i className="fa fa-fw fa-trash"></i>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <tr id="class02">
-                                                    <td><a href="class-detail.html">103175</a></td>
-                                                    <td>Kỹ thuật lập trình</td>
-                                                    <td>20222</td>
-                                                    <td>D3-201</td>
-                                                    <td>
-                                                        <button
-                                                            className="btn btn-warning"
-                                                            data-toggle="modal"
-                                                            data-target="#editClassModal"
-                                                        >
-                                                            <i className="fa fa-fw fa-edit"></i>
-                                                        </button>
-                                                        <button className="btn btn-danger" onClick={this.deleteClass}>
-                                                            <i className="fa fa-fw fa-trash"></i>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <tr id="class03">
-                                                    <td><a href="class-detail.html">103175</a></td>
-                                                    <td>Kỹ thuật lập trình</td>
-                                                    <td>20222</td>
-                                                    <td>D3-201</td>
-                                                    <td>
-                                                        <button
-                                                            className="btn btn-warning"
-                                                            data-toggle="modal"
-                                                            data-target="#editClassModal"
-                                                        >
-                                                            <i className="fa fa-fw fa-edit"></i>
-                                                        </button>
-                                                        <button className="btn btn-danger" onClick={this.deleteClass}>
-                                                            <i className="fa fa-fw fa-trash"></i>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <tr id="class04">
-                                                    <td><a href="class-detail.html">103175</a></td>
-                                                    <td>Kỹ thuật lập trình</td>
-                                                    <td>20222</td>
-                                                    <td>D3-201</td>
-                                                    <td>
-                                                        <button
-                                                            className="btn btn-warning"
-                                                            data-toggle="modal"
-                                                            data-target="#editClassModal"
-                                                        >
-                                                            <i className="fa fa-fw fa-edit"></i>
-                                                        </button>
-                                                        <button className="btn btn-danger" onClick={this.deleteClass}>
-                                                            <i className="fa fa-fw fa-trash"></i>
-                                                        </button>
-                                                    </td>
-                                                </tr>
+                                                <LecturerClasslistItem id="103175" subject="Kỹ thuật lập trình" semester="20222" address="D3-201"/>
+                                                <LecturerClasslistItem id="103175" subject="Kỹ thuật lập trình" semester="20222" address="D3-201"/>
+                                                <LecturerClasslistItem id="103175" subject="Kỹ thuật lập trình" semester="20222" address="D3-201"/>
+                                                <LecturerClasslistItem id="103175" subject="Kỹ thuật lập trình" semester="20222" address="D3-201"/>
                                             </tbody>
                                         </table>
                                     </div>

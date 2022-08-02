@@ -1,11 +1,10 @@
 import React from "react";
-import AddClassModal from "../../components/modals/add-class-modal";
-import EditClassModal from "../../components/modals/edit-class-modal";
 import JoinClassModal from "../../components/modals/join-class-modal";
 import LogoutModal from "../../components/modals/logout-modal";
 import Footer from "../../components/sections/footer";
 import SearchBar from "../../components/sections/searchbar";
 import SidebarStudent from "../../components/sections/sidebar-student";
+import StudentClasslistItem from "../../components/widgets/classlist-item-student";
 
 class StudentClasslist extends React.Component {
     constructor(props){
@@ -43,42 +42,10 @@ class StudentClasslist extends React.Component {
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr id="class01">
-                                                    <td><a href="class-detail-student.html">103175</a></td>
-                                                    <td>Kỹ thuật lập trình</td>
-                                                    <td>20222</td>
-                                                    <td>D3-201</td>
-                                                    <td>
-                                                        <button className="btn btn-danger" onClick={this.deleteClass}><i className="fa-solid fa-right-from-bracket"></i></button>
-                                                    </td>
-                                                </tr>
-                                                <tr id="class02">
-                                                    <td><a href="class-detail-student.html">103175</a></td>
-                                                    <td>Kỹ thuật lập trình</td>
-                                                    <td>20222</td>
-                                                    <td>D3-201</td>
-                                                    <td>
-                                                        <button className="btn btn-danger" onClick={this.deleteClass}><i className="fa-solid fa-right-from-bracket"></i></button>
-                                                    </td>
-                                                </tr>
-                                                <tr id="class03">
-                                                    <td><a href="class-detail-student.html">103175</a></td>
-                                                    <td>Kỹ thuật lập trình</td>
-                                                    <td>20222</td>
-                                                    <td>D3-201</td>
-                                                    <td>
-                                                        <button className="btn btn-danger" onClick={this.deleteClass}><i className="fa-solid fa-right-from-bracket"></i></button>
-                                                    </td>
-                                                </tr>
-                                                <tr id="class04">
-                                                    <td><a href="class-detail-student.html">103175</a></td>
-                                                    <td>Kỹ thuật lập trình</td>
-                                                    <td>20222</td>
-                                                    <td>D3-201</td>
-                                                    <td>
-                                                        <button className="btn btn-danger" onClick={this.deleteClass}><i className="fa-solid fa-right-from-bracket"></i></button>
-                                                    </td>
-                                                </tr>
+                                                <StudentClasslistItem id="103175" subject="Kỹ thuật lập trình" semester="20222" address="D3-201" />
+                                                <StudentClasslistItem id="103175" subject="Kỹ thuật lập trình" semester="20222" address="D3-201" />
+                                                <StudentClasslistItem id="103175" subject="Kỹ thuật lập trình" semester="20222" address="D3-201" />
+                                                <StudentClasslistItem id="103175" subject="Kỹ thuật lập trình" semester="20222" address="D3-201" />
                                             </tbody>
                                         </table>
                                     </div>

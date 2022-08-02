@@ -30,12 +30,12 @@ root.render(
         {/* Lecturer */}
         <Route path="/lecturer/" element={<LecturerHome />} />
         <Route path="/lecturer/classlist" element={<LecturerClasslist />} />
-        <Route path="/lecturer/classdetail" element={<LecturerClassDetail />} />
+        <Route path="/lecturer/classdetail/:id" element={<LecturerClassDetail />} />
         <Route path="/lecturer/info" element={<LecturerInfo />} />
         {/* Student */}
         <Route path="/student/" element={<StudentHome />} />
         <Route path="/student/classlist" element={<StudentClasslist />} />
-        <Route path="/student/classdetail" element={<StudentClassDetail />} />
+        <Route path="/student/classdetail/:id" element={<StudentClassDetail />} />
         <Route path="/student/info" element={<StudentInfo />} />
       </Routes>
     </Router>

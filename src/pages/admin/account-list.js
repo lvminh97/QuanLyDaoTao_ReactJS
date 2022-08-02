@@ -4,6 +4,7 @@ import LogoutModal from "../../components/modals/logout-modal";
 import Footer from "../../components/sections/footer";
 import SearchBar from "../../components/sections/searchbar";
 import SidebarAdmin from "../../components/sections/sidebar-admin";
+import AccountlistItem from "../../components/widgets/accountlist-item";
 
 class AdminAccountlist extends React.Component {
     constructor(props){
@@ -48,17 +49,7 @@ class AdminAccountlist extends React.Component {
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr id="class01">
-                                                    <td><a href="class-detail.html">20211234</a></td>
-                                                    <td>Trần Văn Nam</td>
-                                                    <td>nam.tv211234</td>
-                                                    <td>Sinh viên</td>
-                                                    <td>
-                                                        <button className="btn btn-danger" onClick={this.deleteAccount}>
-                                                            <i className="fa fa-fw fa-trash"></i>
-                                                        </button>
-                                                    </td>
-                                                </tr>
+                                                <AccountlistItem id="20211234" name="Trần Văn Nam" username="nam.tv211234" role="Role_Student"/>
                                             </tbody>
                                         </table>
                                     </div>

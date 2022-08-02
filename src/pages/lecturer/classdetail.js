@@ -6,6 +6,7 @@ import LogoutModal from "../../components/modals/logout-modal";
 import Footer from "../../components/sections/footer";
 import SearchBar from "../../components/sections/searchbar";
 import SidebarLecturer from "../../components/sections/sidebar-lecturer";
+import ClassdetailItem from "../../components/widgets/classdetail-item";
 
 class LecturerClassDetail extends React.Component {
     constructor(props){
@@ -54,39 +55,10 @@ class LecturerClassDetail extends React.Component {
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr id="student01">
-                                                    <td>1</td>
-                                                    <td>Nguyễn Văn C</td>
-                                                    <td>20211140</td>
-                                                    <td>7.5</td>
-                                                    <td>8.0</td>
-                                                    <td>
-                                                        <button className="btn btn-warning" data-toggle="modal" data-target="#editStudentModal" ><i className="fa fa-fw fa-edit"></i></button>
-                                                        <button className="btn btn-danger" onClick={this.deleteStudent}><i className="fa fa-fw fa-trash"></i></button>
-                                                    </td>
-                                                </tr>
-                                                <tr id="student01">
-                                                    <td>2</td>
-                                                    <td>Nguyễn Văn C</td>
-                                                    <td>20211140</td>
-                                                    <td>7.5</td>
-                                                    <td>8.0</td>
-                                                    <td>
-                                                        <button className="btn btn-warning" data-toggle="modal" data-target="#editStudentModal" ><i className="fa fa-fw fa-edit"></i></button>
-                                                        <button className="btn btn-danger" onClick={this.deleteStudent}><i className="fa fa-fw fa-trash"></i></button>
-                                                    </td>
-                                                </tr>
-                                                <tr id="student01">
-                                                    <td>3</td>
-                                                    <td>Nguyễn Văn C</td>
-                                                    <td>20211140</td>
-                                                    <td>7.5</td>
-                                                    <td>8.0</td>
-                                                    <td>
-                                                        <button className="btn btn-warning" data-toggle="modal" data-target="#editStudentModal" ><i className="fa fa-fw fa-edit"></i></button>
-                                                        <button className="btn btn-danger" onClick={this.deleteStudent}><i className="fa fa-fw fa-trash"></i></button>
-                                                    </td>
-                                                </tr>
+                                                <ClassdetailItem number="1" id="20211140" name="Nguyễn Văn C" mark1="7.5" mark2="8.0"/>
+                                                <ClassdetailItem number="2" id="20211140" name="Nguyễn Văn C" mark1="7.5" mark2="8.0"/>
+                                                <ClassdetailItem number="3" id="20211140" name="Nguyễn Văn C" mark1="7.5" mark2="8.0"/>
+                                                <ClassdetailItem number="4" id="20211140" name="Nguyễn Văn C" mark1="7.5" mark2="8.0"/>
                                             </tbody>
                                         </table>
                                     </div>

@@ -4,10 +4,10 @@ class AddAccountModal extends React.Component {
     render() {
         return (
             <div className="modal fade" id="addAccountModal" tabIndex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
-                <div className="modal-dialog modal-lg" role="document">
+                <div className="modal-dialog" role="document">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLabel" style={{fontWeight: "bold"}}>Thêm sinh viên vào lớp học</h5>
+                            <h5 className="modal-title" id="exampleModalLabel" style={{fontWeight: "bold"}}>Thêm tài khoản mới</h5>
                             <button className="close" type="button" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">×</span>
                             </button>
@@ -15,47 +15,30 @@ class AddAccountModal extends React.Component {
                         <div className="modal-body">
                             <form id="addStudentForm">
                                 <div className="form-group">
-                                    <label for="student-id">Mã sinh viên</label>
-                                    <input type="text" className="form-control" id="student-id" style={{width: "50%"}} />
+                                    <label htmlFor="account-id">Mã tài khoản (UID)</label>
+                                    <input type="text" className="form-control" id="account-id" />
                                 </div>
-                                <div className="form-group row">
-                                    <div className="col-md-3">
-                                        <button className="btn btn-block btn-primary" data-dismiss="modal">Thêm</button>
-                                    </div>
+                                <div className="form-group">
+                                    <label htmlFor="fullname">Họ tên</label>
+                                    <input type="text" className="form-control" id="fullname" />
+                                </div>
+                                <div className="form-group">
+                                    <label htmlFor="username">Tên đăng nhập</label>
+                                    <input type="text" className="form-control" id="username" />
+                                </div>
+                                <div className="form-group">
+                                    <label htmlFor="role">Vai trò</label>
+                                    <select className="form-control" id="role">
+                                        <option value="Role_Lecturer">Giảng viên</option>
+                                        <option value="Role_Student">Sinh viên</option>
+                                    </select>
                                 </div>
                                 <div className="mb-lg-5"></div>
-                                <div className="mb-4" style={{fontWeight: "bolder"}}>Danh sách sinh viên chờ phê duyệt vào lớp</div>
-                                <div>
-                                    <table className="table table-striped">
-                                        <tbody>
-                                            <tr>
-                                                <td width="10%">20211234</td>
-                                                <td width="25%">Trần Văn Nam</td>
-                                                <td width="10%">
-                                                    <button className="btn btn-success"><i className="fa fa-fw fa-check"></i></button>
-                                                    <button className="btn btn-danger"><i className="fa fa-fw fa-xmark"></i></button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td width="10%">20211234</td>
-                                                <td width="25%">Trần Văn Nam</td>
-                                                <td width="10%">
-                                                    <button className="btn btn-success"><i className="fa fa-fw fa-check"></i></button>
-                                                    <button className="btn btn-danger"><i className="fa fa-fw fa-xmark"></i></button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td width="10%">20211234</td>
-                                                <td width="25%">Trần Văn Nam</td>
-                                                <td width="10%">
-                                                    <button className="btn btn-success"><i className="fa fa-fw fa-check"></i></button>
-                                                    <button className="btn btn-danger"><i className="fa fa-fw fa-xmark"></i></button>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
                             </form>
+                        </div>
+                        <div className="modal-footer">
+                            <button className="btn btn-secondary" data-dismiss="modal">Bỏ qua</button>
+                            <button className="btn btn-primary" data-dismiss="modal">Thêm</button>
                         </div>
                     </div>
                 </div>
