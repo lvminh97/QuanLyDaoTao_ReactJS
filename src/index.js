@@ -10,6 +10,8 @@ import LecturerClassDetail from './pages/lecturer/classdetail';
 import StudentClassDetail from './pages/student/classdetail';
 import LecturerInfo from './pages/lecturer/info';
 import StudentClasslist from './pages/student/classlist';
+import StudentHome from './pages/student/home';
+import StudentInfo from './pages/student/info';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,9 +26,10 @@ root.render(
         <Route path="/lecturer/classdetail" element={<LecturerClassDetail />} />
         <Route path="/lecturer/info" element={<LecturerInfo />} />
         {/* Student */}
-        {/* <Route path="/student/" element={<LecturerHome />} /> */}
+        <Route path="/student/" element={<StudentHome />} />
         <Route path="/student/classlist" element={<StudentClasslist />} />
         <Route path="/student/classdetail" element={<StudentClassDetail />} />
+        <Route path="/student/info" element={<StudentInfo />} />
       </Routes>
     </Router>
   </div>

@@ -5,7 +5,7 @@ import Footer from "../../components/sections/footer";
 import SearchBar from "../../components/sections/searchbar";
 import SidebarLecturer from "../../components/sections/sidebar-lecturer";
 
-class LecturerInfo extends React.Component {
+class StudentInfo extends React.Component {
     render() {
         return (
             <div id="page-top">
@@ -17,17 +17,27 @@ class LecturerInfo extends React.Component {
                             <div className="container-fluid">
                                 <div className="row">
                                     <div className="col-md-12 mb-4">
-                                        <h3 style={{fontWeight: "bolder"}}>Thông tin cá nhân - Giảng viên</h3>
+                                        <h3 style={{fontWeight: "bolder"}}>Thông tin cá nhân - Sinh viên</h3>
                                         <hr />
                                     </div>
                                     <div className="col-md-8">
-                                        <form id="lecture-info">
+                                        <form id="addStudentForm">
                                             <div className="form-group">
                                                 <label>Tên đăng nhập</label>
                                                 <input
                                                     type="text"
                                                     className="form-control mb-4"
                                                     id="username"
+                                                    style={{width: "50%"}}
+                                                    disabled
+                                                />
+                                            </div>
+                                            <div className="form-group">
+                                                <label>Mã sinh viên</label>
+                                                <input
+                                                    type="text"
+                                                    className="form-control mb-4"
+                                                    id="student-id"
                                                     style={{width: "50%"}}
                                                     disabled
                                                 />
@@ -70,4 +80,4 @@ class LecturerInfo extends React.Component {
     }
 }
 
-export default LecturerInfo;
+export default StudentInfo;
