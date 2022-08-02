@@ -14,17 +14,17 @@ class LogoutModal extends React.Component {
                 <div className="modal-dialog" role="document">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                            <h5 className="modal-title" id="exampleModalLabel">Đăng xuất?</h5>
                             <button className="close" type="button" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">×</span>
                             </button>
                         </div>
                         <div className="modal-body">
-                            Select "Logout" below if you are ready to end your current session.
+                            Bạn có chắc chắn muốn đăng xuất?
                         </div>
                         <div className="modal-footer">
-                            <button className="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                            <a className="btn btn-primary" href="# ">Logout</a>
+                            <button className="btn btn-secondary" type="button" data-dismiss="modal">Bỏ qua</button>
+                            <a className="btn btn-primary" href="# ">Đăng xuất</a>
                         </div>
                     </div>
                 </div>
