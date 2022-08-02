@@ -2,7 +2,7 @@ import React from "react";
 import LogoutModal from "../../components/modals/logout-modal";
 import Footer from "../../components/sections/footer";
 import SearchBar from "../../components/sections/searchbar";
-import SidebarLecturer from "../../components/sections/sidebar-lecturer";
+import SidebarStudent from "../../components/sections/sidebar-student";
 
 class StudentClassDetail extends React.Component {
     constructor(props){
@@ -19,7 +19,7 @@ class StudentClassDetail extends React.Component {
         return (
             <div id="page-top">
                 <div id="wrapper">
-                    <SidebarLecturer />
+                    <SidebarStudent />
                     <div id="content-wrapper" className="d-flex flex-column">
                         <div id="content">
                             <SearchBar />
